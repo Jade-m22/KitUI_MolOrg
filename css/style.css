@@ -1,0 +1,114 @@
+/* Style pour la grosse bannière */
+.banner-large {
+  position: relative;
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/03/15/44/fireworks-1880045_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: white; /* Couleur du texte en blanc */
+}
+
+.banner-large::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent noir */
+  z-index: 1; /* S'assure que l'overlay est au-dessus de l'image mais en dessous du texte */
+}
+
+.banner-large .container {
+  position: relative;
+  z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
+}
+
+.banner-large h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white; /* Texte en blanc */
+}
+
+.banner-large p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: white; /* Texte en blanc */
+}
+
+.banner-large .btn {
+  font-size: 1.25rem;
+  padding: 10px 30px;
+  color: rgb(0, 0, 0); /* Texte du bouton en blanc */
+  background-color: #ffffff93; /* Couleur de fond du bouton */
+}
+
+/* Style pour la bannière plus petite */
+.banner-small {
+  position: relative;
+  background-image: url('https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  color: white; /* Couleur du texte en blanc */
+}
+
+.banner-small::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent noir */
+  z-index: 1; /* S'assure que l'overlay est au-dessus de l'image mais en dessous du texte */
+}
+
+.banner-small .container {
+  position: relative;
+  z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
+}
+
+.banner-small h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Texte en blanc */
+}
+
+.presentation-element {
+  padding: 40px 0;
+}
+
+.presentation-element h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.presentation-element p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.presentation-element .btn {
+  font-size: 1rem;
+  padding: 12px 30px;
+}
+
+.events-list .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.events-list .card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.events-list .card-body {
+  padding: 20px;
+}
+
+.events-list .btn {
+  margin-top: 10px;
+}
+

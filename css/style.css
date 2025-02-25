@@ -112,3 +112,282 @@
   margin-top: 10px;
 }
 
+/*-----------------------------------------------*/
+
+/* ---------------------- */
+/*       BASE GLOBALE     */
+/* ---------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 20px;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* ---------------------- */
+/*      TYPOGRAPHIE       */
+/* ---------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.8;
+  background-color: #fdf0d531;
+  padding: 10px;
+  border-left: 4px solid #F04842;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 18px;
+  color: #666;
+  border-left: 5px solid #CB9666;
+  padding-left: 15px;
+  margin: 20px 0;
+}
+
+/* ---------------------- */
+/*    PALETTE COULEURS    */
+/* ---------------------- */
+.color-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.color-card {
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+.color-box {
+  height: 50px;
+  width: 100%;
+}
+
+.color-info {
+  padding: 3px;
+  background-color: white;
+}
+
+.color-info h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.color-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ---------------------- */
+/*        BOUTONS         */
+/* ---------------------- */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  display: inline-flex;  /* Changement ici, pour mieux contrôler les boutons */
+  justify-content: center; /* Aligner le texte au centre */
+  align-items: center;     /* Aligner verticalement */
+  width: auto;            /* Important : ajuste la largeur à celle du contenu */
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Couleurs des boutons */
+.btn.primary { background-color: #c278ae; }
+.btn.secondary { background-color: #f3969a; }
+.btn.dark { background-color: #3b3b3b; }
+.btn.medium-light { background-color: #686868; }
+.btn.light { background-color: #cacaca; color: #000; }
+
+.btn.warning { background-color: #f68b1a; }
+.btn.danger { background-color: #f73333; }
+.btn.info { background-color: #47A4A7; }
+.btn.success { background-color: #65B592; }
+
+/* Boutons Outline */
+.btn-outline {
+  background-color: transparent !important;
+  border: 2px solid;
+  color: inherit;
+  display: inline-block;  /* Important pour les boutons outline */
+  width: auto;            /* Pour empêcher la largeur 100% */
+}
+
+.btn-outline.primary {
+  border-color: #F04842;
+  color: #F04842;
+}
+
+.btn-outline.warning {
+  border-color: #f68b1a;
+  color: #f68b1a;
+}
+
+.btn-outline.danger {
+  border-color: #f73333;
+  color: #f73333;
+}
+
+.btn-outline.info {
+  border-color: #47A4A7;
+  color: #47A4A7;
+}
+
+.btn-outline.success {
+  border-color: #65B592;
+  color: #65B592;
+}
+
+.btn-outline:hover {
+  background-color: inherit !important;
+  color: white !important;
+}
+
+.btn-outline.primary:hover {
+  background-color: #F04842 !important;
+}
+
+.btn-outline.warning:hover {
+  background-color: #f68b1a !important;
+}
+
+.btn-outline.danger:hover {
+  background-color: #f73333 !important;
+}
+
+.btn-outline.info:hover {
+  background-color: #47A4A7 !important;
+}
+
+.btn-outline.success:hover {
+  background-color: #65B592 !important;
+}
+
+/* Tailles des boutons */
+.btn-sm { padding: 5px 10px; font-size: 14px; }
+.btn-lg { padding: 15px 30px; font-size: 18px; }
+
+/* ---------------------- */
+/*        LISTES          */
+/* ---------------------- */
+
+/* Conteneur des listes en ligne */
+.lists-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Chaque liste prend 50% de l’espace */
+.icon-list, .number-list {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Style des éléments de la liste */
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 16px; /* Aligné avec les paragraphes */
+  color: #444; /* Même couleur que les <p> */
+  border-bottom: 1px solid #eee;
+  background: white; /* Fond blanc */
+  border-radius: 5px;
+  margin-bottom: 8px; /* Espacement entre chaque élément */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Dernier élément sans bordure */
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Icônes plus petites */
+.list-group-item .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #4CAF50;
+}
+
+/* Style des numéros en cercle */
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #F04842;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+/* Effet au survol */
+.list-group-item:hover {
+  background: #f3f3f3;
+}
+
+
+/* ---------------------- */
+/*      SECTIONS          */
+/* ---------------------- */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  border-bottom: 3px solid #c278ae;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+

@@ -114,9 +114,6 @@
 
 /*-----------------------------------------------*/
 
-/* ---------------------- */
-/*       BASE GLOBALE     */
-/* ---------------------- */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -127,9 +124,6 @@ body {
   background-color: #f8f9fa;
 }
 
-/* ---------------------- */
-/*      TYPOGRAPHIE       */
-/* ---------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -170,9 +164,6 @@ blockquote {
   margin: 20px 0;
 }
 
-/* ---------------------- */
-/*    PALETTE COULEURS    */
-/* ---------------------- */
 .color-container {
   display: flex;
   justify-content: center;
@@ -214,9 +205,6 @@ blockquote {
   color: #666;
 }
 
-/* ---------------------- */
-/*        BOUTONS         */
-/* ---------------------- */
 .btn {
   padding: 10px 20px;
   border: none;
@@ -312,9 +300,6 @@ blockquote {
 .btn-sm { padding: 5px 10px; font-size: 14px; }
 .btn-lg { padding: 15px 30px; font-size: 18px; }
 
-/* ---------------------- */
-/*        LISTES          */
-/* ---------------------- */
 
 /* Conteneur des listes en ligne */
 .lists-wrapper {
@@ -378,9 +363,6 @@ blockquote {
 }
 
 
-/* ---------------------- */
-/*      SECTIONS          */
-/* ---------------------- */
 section {
   margin: 40px 0;
 }
